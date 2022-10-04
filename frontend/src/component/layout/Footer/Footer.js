@@ -26,6 +26,7 @@ const Footer = () => {
           Youtube
         </a>
         <a href="https://www.facebook.com/nikesh.borkar2/">Facebook</a>
+        <a href="https://www.linkedin.com/in/nikesh-borkar">Linkdin</a>
       </div>
     </footer>
   );
