@@ -83,7 +83,9 @@
 }
 
 .productCardimgdiv > img {
-  width: 14vmax;
+  width: 13vmax;
+  height: 180px;
+  object-fit: contain;
   border-radius: 5px;
 }
 
@@ -183,7 +185,7 @@
   }
 
   .productCardimgdiv {
-    height: 100px;
+    height: 150px;
   }
   .productCard > span {
     font-size: 1.5vmax;
