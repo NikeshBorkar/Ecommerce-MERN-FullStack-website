@@ -71,6 +71,12 @@ function App() {
     <Router>
       <Header />
       {isAuthenticated && <UserOptions user={user} />}
+      {stripeApiKey && (
+        <Elements stripe={loadStripe(stripeApiKey)}>
+          <ProtectedRoute exact path="/process/payment" element={<Payment />} />
+        </Elements>
+      )}
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/product/:id" element={<ProductDetails />} />
