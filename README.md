@@ -2,6 +2,11 @@
 
 Hi! My name is **Nikesh Borkar**, I have created this website to learn MERN Stack frome YouTube.
 
+- [Click here](https://ecommerce-mern-fullstack-store.herokuapp.com/) to preview my project.
+- [MD Arshad Khan](https://medium.com/@mdarshadkhan1998/clone-of-bobbibrowncosmetics-com-5e0baa7bd62b),[Shivanshu Chobey](https://medium.com/@shivanshuchobey5998/bobbibrown-com-website-clone-construct-week-unit-4-237dd9990d7c) Click here to view our Blog.
+- [Click here](https://drive.google.com/file/d/1bGrJOXcpS2e1ZPlwFjyBPsqSXb_5iucg/view?usp=sharing) to watch a brief preview of our project in video format.
+
+
 # Prerequisite
 
 1.  Must have basic knowledge of **Node**, **React**, **Express**, **MongoDB** . _I have learned each technology on YouTube , make sure to check it out_. **Links are Below respectively**
