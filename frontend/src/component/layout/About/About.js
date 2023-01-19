@@ -5,12 +5,14 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import MetaData from "../MetaData";
 const About = () => {
   const visitInstagram = () => {
     window.location = "https://instagram.com/devloper_nikesh";
   };
   return (
     <div className="aboutSection">
+      <MetaData title="ABOUT US" />
       <div></div>
       <div className="aboutSectionGradient"></div>
       <div className="aboutSectionContainer">
