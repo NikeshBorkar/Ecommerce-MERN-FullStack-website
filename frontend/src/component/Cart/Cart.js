@@ -6,6 +6,7 @@ import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
 import { Typography } from "@material-ui/core";
 import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link, useNavigate } from "react-router-dom";
+import MetaData from "../layout/MetaData";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -48,6 +49,7 @@ const Cart = () => {
         </div>
       ) : (
         <Fragment>
+          <MetaData title="CART PAGE" />
           <div className="cartPage">
             <div className="cartHeader">
               <p>Product</p>
