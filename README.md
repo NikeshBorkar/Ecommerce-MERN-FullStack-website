@@ -2,9 +2,8 @@
 
 Hi! My name is **Nikesh Borkar**, I have created this website to learn MERN Stack frome YouTube.
 
-- [Click here](https://ecommerce-mern-fullstack-store.herokuapp.com/) to preview my project.
-- [MD Arshad Khan](https://medium.com/@mdarshadkhan1998/clone-of-bobbibrowncosmetics-com-5e0baa7bd62b),[Shivanshu Chobey](https://medium.com/@shivanshuchobey5998/bobbibrown-com-website-clone-construct-week-unit-4-237dd9990d7c) Click here to view our Blog.
-- [Click here](https://drive.google.com/file/d/1bGrJOXcpS2e1ZPlwFjyBPsqSXb_5iucg/view?usp=sharing) to watch a brief preview of our project in video format.
+- [Click here](https://ecommerce-mern-fullstack-website-new.onrender.com) to preview my project.
+- [Click here](https://drive.google.com/file/d/1cULFnBDmtVp_xnEaFwqk9iAXdcRkKIZk/view?usp=sharing) to watch a brief preview of our project in video format.
 
 
 # Prerequisite
@@ -27,26 +26,27 @@ Hi! My name is **Nikesh Borkar**, I have created this website to learn MERN Stac
 Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
 
 **Essential Variables**
-PORT=
-DB*URI =
-STRIPE_API_KEY=
-STRIPE_SECRET_KEY=
-JWT_SECRET=
-JWT_EXPIRE=
-COOKIE_EXPIRE=
-SMPT_SERVICE =
-SMPT_MAIL=
-SMPT_PASSWORD=
-SMPT_HOST=
-SMPT_PORT=
-CLOUDINARY_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
+- PORT=
+- DB*URI =
+- STRIPE_API_KEY=
+- STRIPE_SECRET_KEY=
+- JWT_SECRET=
+- JWT_EXPIRE=
+- COOKIE_EXPIRE=
+- SMPT_SERVICE =
+- SMPT_MAIL=
+- SMPT_PASSWORD=
+- SMPT_HOST=
+- SMPT_PORT=
+- CLOUDINARY_NAME
+- CLOUDINARY_API_KEY
+- CLOUDINARY_API_SECRET
+
 \_fill each filed with your info respectively*
 
 ## Author
 
-**Instagram** Click [Here](https://instagram.com/devloper_nikesh) **@NikeshBorkar**
-**YouTube** Click [Here](https://www.youtube.com/channel/UCzmS4yYED1RoHfwAXrOocuQ/) **nikesh borkar**
-**LinkedIn** Click [Here](https://in.linkedin.com/in/meabhisingh) **@NikeshBorkar**
-**Twitter** Click [Here](https://twitter.com/nikeshborkar8) **@NikeshBorkar**
+- **Instagram** Click [Here](https://instagram.com/devloper_nikesh) **@NikeshBorkar**
+- **YouTube** Click [Here](https://www.youtube.com/channel/UCzmS4yYED1RoHfwAXrOocuQ/) **nikesh borkar**
+- **LinkedIn** Click [Here](https://in.linkedin.com/in/meabhisingh) **@NikeshBorkar**
+- **Twitter** Click [Here](https://twitter.com/nikeshborkar8) **@NikeshBorkar**
