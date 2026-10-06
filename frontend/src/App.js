@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./component/layout/Header/Header.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import WebFont from "webfontloader";
 import React from "react";
 import Footer from "./component/layout/Footer/Footer.js";
@@ -48,11 +48,21 @@ function App() {
 
   const [stripeApiKey, setStripeApiKey] = useState("");
 
-  async function getStripeApiKey() {
-    const { data } = await axios.get("/api/v1/stripeapikey");
+  // create the Stripe promise only once per key (not on every render)
+  const stripePromise = useMemo(
+    () => (stripeApiKey ? loadStripe(stripeApiKey) : null),
+    [stripeApiKey]
+  );
 
-    setStripeApiKey(data.stripeApiKey);
-  }
+  // /stripeapikey requires login, so fetch the key after the user is authenticated
+  useEffect(() => {
+    if (!isAuthenticated) return;
+
+    axios
+      .get("/api/v1/stripeapikey")
+      .then(({ data }) => setStripeApiKey(data.stripeApiKey))
+      .catch(() => {});
+  }, [isAuthenticated]);
 
   useEffect(() => {
     WebFont.load({
@@ -62,8 +72,6 @@ function App() {
     });
 
     store.dispatch(loadUser());
-
-    getStripeApiKey();
   }, []);
 
   window.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -71,12 +79,6 @@ function App() {
     <Router>
       <Header />
       {isAuthenticated && <UserOptions user={user} />}
-      {stripeApiKey && (
-        <Elements stripe={loadStripe(stripeApiKey)}>
-          <ProtectedRoute exact path="/process/payment" element={<Payment />} />
-        </Elements>
-      )}
-
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/product/:id" element={<ProductDetails />} />
@@ -143,8 +145,8 @@ function App() {
           exact
           path="/process/payment"
           element={
-            stripeApiKey && (
-              <Elements stripe={loadStripe(stripeApiKey)}>
+            stripePromise && (
+              <Elements stripe={stripePromise}>
                 <ProtectedRoute>
                   <Payment />
                 </ProtectedRoute>
